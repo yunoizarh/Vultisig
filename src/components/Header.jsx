@@ -122,8 +122,8 @@ const Header = () => {
           </div>
         </motion.div>
 
-        {/* Navigation */}
-        <nav className="hidden md:flex items-center space-x-6 ">
+        {/* Desktop Navigation */}
+        <nav className="hidden md:flex items-center space-x-6">
           <div className="relative">
             <button
               onClick={() => setIsDropdownOpen(!isDropdownOpen)}
@@ -169,10 +169,12 @@ const Header = () => {
           </a>
         </nav>
 
-        {/* CTA Button */}
-        <CtaButton>Download App</CtaButton>
+        {/* Desktop CTA Button - Hidden on Mobile */}
+        <div className="hidden md:flex">
+          <CtaButton>Download App</CtaButton>
+        </div>
 
-        {/* Mobile Menu Button */}
+        {/* Mobile Menu Button (Hamburger) */}
         <button
           onClick={() => setIsOpen(!isOpen)}
           className="md:hidden text-white"
@@ -188,7 +190,7 @@ const Header = () => {
           isOpen ? { height: "auto", opacity: 1 } : { height: 0, opacity: 0 }
         }
         transition={{ duration: 0.3 }}
-        className="md:hidden bg-[#0D1B2A] text-white overflow-hidden flex flex-col items-center py-1"
+        className="md:hidden bg-[#0D1B2A] overflow-hidden flex flex-col items-center py-2"
       >
         <a href="#" className="block py-2 hover:text-blue-400">
           Product
@@ -205,12 +207,9 @@ const Header = () => {
         <a href="#" className="block py-2 hover:text-blue-400">
           $VULT
         </a>
-        <a
-          href="#"
-          className="block bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition"
-        >
-          Download App
-        </a>
+
+        {/* Mobile CTA Button - Only Inside Menu */}
+        <CtaButton className="md:hidden">Download App</CtaButton>
       </motion.div>
     </motion.header>
   );

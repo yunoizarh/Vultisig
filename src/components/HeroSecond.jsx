@@ -9,7 +9,7 @@ const HeroSecond = () => {
       <div className="relative z-10 text-center max-w-2xl mt-10 md:mt-0">
         {/* Animated Heading */}
         <motion.h1
-          className="text-2xl sm:text-3xl md:text-5xl font-bold leading-tight"
+          className="text-2xl sm:text-3xl md:text-5xl font-bold leading-tight mt-14 sm:mt-0"
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
@@ -66,7 +66,7 @@ const HeroSecond = () => {
       <motion.img
         src="https://vultisig.com/_next/image?url=%2Fimages%2Fhome%2Fintroduction-image.png&w=3840&q=75"
         alt="Phone Mockup"
-        className="absolute right-4 sm:right-10 md:right-0 bottom-1 md:bottom-[10%] w-40 sm:w-52 md:w-80"
+        className="absolute -right-3 sm:right-10 md:right-0 -bottom-8 md:bottom-[10%] w-40 sm:w-52 md:w-80"
         initial={{ x: 100, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
         transition={{ duration: 1 }}

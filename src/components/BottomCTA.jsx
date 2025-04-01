@@ -8,7 +8,7 @@ const BottomCTA = () => {
       <div className="w-full md:w-1/2">
         <div className="flex items-center justify-center md:justify-start gap-2">
           {/* Logo */}
-          <div className="text-white text-xl font-bold flex items-center">
+          <div className=" text-xl font-bold flex items-center">
             <span className="text-blue-400">
               <svg viewBox="0 0 24 24" className="size-10 md:size-14">
                 <path
