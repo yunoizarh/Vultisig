@@ -1,6 +1,6 @@
 import React from "react";
 import vultVideo1 from "../assets/Vultisig.mp4";
-import vultVideo2 from "../assets/Vultisig.webm";
+import vultVideo2 from "../assets/Vultisig2.webm";
 
 const VultVideo = () => {
   return (
