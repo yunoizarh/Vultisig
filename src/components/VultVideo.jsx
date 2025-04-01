@@ -1,5 +1,5 @@
 import React from "react";
-import vultVideo1 from "../assets/Vultisig.mp4";
+import vultVideo1 from "../assets/vult2.mp4";
 import vultVideo2 from "../assets/Vultisig2.webm";
 
 const VultVideo = () => {
@@ -13,9 +13,9 @@ const VultVideo = () => {
         playsInline
         preload="auto"
       >
-        <source src={vultVideo2} type="video/webm" />{" "}
         <source src={vultVideo1} type="video/mp4" />
-        Your browser does not support the video tag.
+        <source src={vultVideo2} type="video/webm" /> Your browser does not
+        support the video tag.
       </video>
     </div>
   );

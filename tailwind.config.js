@@ -5,7 +5,7 @@ export default {
     extend: {
       colors: { primary: "#02122b" },
       backgroundImage: {
-        customGradient: "linear-gradient(to bottom, #092759, #02122b)",
+        customGradient: "linear-gradient(to bottom, #06579c, #02122b)",
         bgImg: "url('src/assets/Polygon3.svg')",
         boxBg1: "url('src/assets/asfalt-light.png')",
       },
