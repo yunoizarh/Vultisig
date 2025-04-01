@@ -63,14 +63,15 @@ const HeroSecond = () => {
         transition={{ duration: 1 }}
         viewport={{ once: false, amount: 0.5 }}
       />
+
       <motion.img
         src="https://vultisig.com/_next/image?url=%2Fimages%2Fhome%2Fintroduction-image.png&w=3840&q=75"
         alt="Phone Mockup"
-        className="absolute -right-3 sm:right-10 md:right-0 -bottom-8 md:bottom-[10%] w-40 sm:w-52 md:w-80"
+        className="absolute block right-3 sm:right-10 md:right-0 -bottom-8 md:bottom-[10%] w-40 sm:w-52 md:w-80 max-w-none"
         initial={{ x: 100, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
         transition={{ duration: 1 }}
-        viewport={{ once: false, amount: 0.5 }}
+        viewport={{ once: false, amount: 0.1 }} // Reduced amount
       />
     </section>
   );
