@@ -56,7 +56,7 @@ const NewHero = () => {
             }}
             viewport={{ once: false, amount: 0.2 }}
           >
-            <CtaButton>Download App</CtaButton>
+            <CtaButton>Get App</CtaButton>
           </motion.div>
         </motion.div>
 

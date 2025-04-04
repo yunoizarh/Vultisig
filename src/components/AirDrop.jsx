@@ -30,7 +30,7 @@ const AirDrop = () => {
           >
             
           </a> */}
-          <CtaButton>Join today</CtaButton>
+          <CtaButton>Claim Airdrop</CtaButton>
         </div>
       </div>
     </section>

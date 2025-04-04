@@ -171,7 +171,7 @@ const Header = () => {
 
         {/* Desktop CTA Button - Hidden on Mobile */}
         <div className="hidden md:flex">
-          <CtaButton>Download App</CtaButton>
+          <CtaButton>Get App</CtaButton>
         </div>
 
         {/* Mobile Menu Button (Hamburger) */}
@@ -209,7 +209,7 @@ const Header = () => {
         </a>
 
         {/* Mobile CTA Button - Only Inside Menu */}
-        <CtaButton className="md:hidden">Download App</CtaButton>
+        <CtaButton className="md:hidden">Get App</CtaButton>
       </motion.div>
     </motion.header>
   );
