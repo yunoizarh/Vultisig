@@ -7,12 +7,11 @@ import { motion } from "framer-motion";
 const NewHero = () => {
   return (
     <>
-      {/* Scrolling Ticker */}
       <div className="w-full overflow-hidden whitespace-nowrap mt-10">
         <motion.div
           className="flex space-x-8"
           animate={{ x: ["0%", "-100%"] }}
-          transition={{ repeat: Infinity, duration: 10, ease: "linear" }}
+          transition={{ repeat: Infinity, duration: 30, ease: "linear" }}
         >
           {Array(10)
             .fill(" Vultisig Airdrop Is Live , JOIN NOW!")
@@ -40,13 +39,11 @@ const NewHero = () => {
             <ColoredText>Vultisig :</ColoredText> The Future of Secure Crypto
             Custody
           </h1>
-
           <p className="text-gray-400 mt-4 text-base sm:text-lg">
             Your assets, your control. Vultisig eliminates the need for seed
             phrases while offering cutting-edge multi-signature security and
             multi-chain compatibility.
           </p>
-
           <motion.div
             className="mt-6 flex justify-center lg:justify-start gap-4"
             initial={{ opacity: 0, scale: 0.8 }}

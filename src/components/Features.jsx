@@ -45,7 +45,7 @@ const Features = () => {
         {features.map((feature, index) => (
           <motion.div
             key={index}
-            className={`relative bg-white/10 bg-cover bg-center p-4 rounded-xl shadow-md flex flex-col items-center text-center 
+            className={`relative bg-white/10 backdrop-blur-lg border border-white/20  bg-cover bg-center p-4 rounded-xl shadow-md flex flex-col items-center text-center 
     ${index === 0 ? "md:row-span-2 md:h-auto" : ""} 
     ${index === 3 ? "md:col-span-2 md:w-full" : "max-w-xs mx-auto"}`}
             initial={{ opacity: 0, y: 30 }}
